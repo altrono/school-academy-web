@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_academy/res/assets.dart';
+import 'package:online_academy_web/res/assets.dart';
 
 class Header extends StatelessWidget {
   const Header({Key? key}) : super(key: key);

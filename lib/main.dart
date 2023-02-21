@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_academy/pages/home_page.dart';
+import 'package:online_academy_web/pages/home_page.dart';
 
 void main() {
   runApp(MyApp());

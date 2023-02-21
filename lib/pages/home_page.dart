@@ -3,6 +3,7 @@ import 'package:online_academy_web/widgets/header.dart';
 
 import '../res/assets.dart';
 import '../widgets/course_card.dart';
+import '../widgets/featured_section.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -40,8 +41,8 @@ class HomePage extends StatelessWidget {
                         "application along the way.",
                     onActionPressed: () {},
                 ),
-            const SizedBox(width: 20.0),
-            CourseCard(
+                const SizedBox(width: 20.0),
+                CourseCard(
                 title: "Flutter for Everyone",
                 image: Assets.course,
                 description:
@@ -50,9 +51,63 @@ class HomePage extends StatelessWidget {
                     "Flutter apps after taking this course.",
                 onActionPressed: () {},
           ),
+                const SizedBox(width: 20.0),
+                CourseCard(
+                  title: "Flutter for Everyone",
+                  image: Assets.course,
+                  description:
+                  "Flutter beginners' course for everyone. For those who "
+                      "know basic programming, can easily start developing "
+                      "Flutter apps after taking this course.",
+                  onActionPressed: () {},
+                ),
+                const SizedBox(width: 20.0),
+                CourseCard(
+                  title: "Flutter for Everyone",
+                  image: Assets.course,
+                  description:
+                  "Flutter beginners' course for everyone. For those who "
+                      "know basic programming, can easily start developing "
+                      "Flutter apps after taking this course.",
+                  onActionPressed: () {},
+                ),
+                const SizedBox(width: 20.0),
+                CourseCard(
+                  title: "Flutter for Everyone",
+                  image: Assets.course,
+                  description:
+                  "Flutter beginners' course for everyone. For those who "
+                      "know basic programming, can easily start developing "
+                      "Flutter apps after taking this course.",
+                  onActionPressed: () {},
+                ),
               ],
             ),
           ),
+          Center(
+            child: FeaturedSection(
+              image: Assets.instructor,
+              title: "Start teaching today",
+              description:
+              "Instructors from around the world teach millions "
+                  "of students on Udemy. We provide the tools and "
+                  "skills to teach what you love.",
+              buttonLabel: "Become an instructor",
+              onActionPressed: () {},
+            ),
+          ),
+          Center(
+            child: FeaturedSection(
+              imageLeft: false,
+              image: Assets.instructor,
+              title: "Transform your life through education",
+              description: "Education changes your life beyond your "
+                  "imagination. Education enables you to achieve your dreams.",
+              buttonLabel: "Start learning",
+              onActionPressed: () {},
+            ),
+          ),
+
 
         ],
       ),

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:online_academy_web/widgets/call_to_action.dart';
 import 'package:online_academy_web/widgets/header.dart';
 
 import '../res/assets.dart';
 import '../widgets/course_card.dart';
 import '../widgets/featured_section.dart';
+import '../widgets/footer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -96,6 +98,7 @@ class HomePage extends StatelessWidget {
               onActionPressed: () {},
             ),
           ),
+          CallToAction(),
           Center(
             child: FeaturedSection(
               imageLeft: false,
@@ -107,6 +110,7 @@ class HomePage extends StatelessWidget {
               onActionPressed: () {},
             ),
           ),
+          Footer(),
 
 
         ],
